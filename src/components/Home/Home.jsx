@@ -1,10 +1,11 @@
-import Navbar from "../Navbar/Navbar";
+import Hero from "../Hero/Hero";
 
 const Home = () => {
   return (
-    <section className="w-screen h-screen bg-neutral-300">
-      <Navbar />
-    </section>
+    <main>
+      {/* hero section */}
+      <Hero />
+    </main>
   );
 };
 
