@@ -6,6 +6,8 @@ export default {
       colors: {
         green: "#99BD8E",
         pink: "#DF7272",
+        granite: "#665570",
+        beige: "#F6F5D8",
       },
     },
   },

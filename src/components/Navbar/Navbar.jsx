@@ -21,19 +21,19 @@ const Navbar = () => {
             <div className="ml-10 flex items-baseline space-x-4">
               <Link
                 to="/about"
-                className="text-gray-300 transition-all duration-500 hover:bg-pink hover:text-white px-3 py-2 rounded-md text-md font-medium"
+                className="text-gray-300 transition-all duration-500 hover:bg-beige hover:text-pink px-3 py-2 rounded-md text-md font-medium"
               >
                 About
               </Link>
               <Link
                 to="/contact"
-                className="text-gray-300 transition-all duration-500 hover:bg-pink hover:text-white px-3 py-2 rounded-md text-md font-medium"
+                className="text-gray-300 transition-all duration-500 hover:bg-beige hover:text-pink px-3 py-2 rounded-md text-md font-medium"
               >
                 Contact
               </Link>
               <Link
                 to="/resources"
-                className="text-gray-300 transition-all duration-500 hover:bg-pink hover:text-white px-3 py-2 rounded-md text-md font-medium"
+                className="text-gray-300 transition-all duration-500 hover:bg-beige hover:text-pink px-3 py-2 rounded-md text-md font-medium"
               >
                 Resources
               </Link>
@@ -56,19 +56,19 @@ const Navbar = () => {
           <div className="ox-2 pt-2 pb-3 space-y-1 sm:px-3 flex flex-col">
             <Link
               to="/about"
-              className="text-gray-300 transition-all duration-500 hover:bg-pink hover:text-white px-3 py-2 rounded-md text-md font-medium"
+              className="text-gray-300 transition-all duration-500 hover:bg-beige hover:text-pink px-3 py-2 rounded-md text-md font-medium"
             >
               About
             </Link>
             <Link
               to="/contact"
-              className="text-gray-300 transition-all duration-500 hover:bg-pink hover:text-white px-3 py-2 rounded-md text-md font-medium"
+              className="text-gray-300 transition-all duration-500 hover:bg-beige hover:text-pink px-3 py-2 rounded-md text-md font-medium"
             >
               Contact
             </Link>
             <Link
               to="/resources"
-              className="text-gray-300 transition-all duration-500 hover:bg-pink hover:text-white px-3 py-2 rounded-md text-md font-medium"
+              className="text-gray-300 transition-all duration-500 hover:bg-beige hover:text-pink px-3 py-2 rounded-md text-md font-medium"
             >
               Resources
             </Link>
