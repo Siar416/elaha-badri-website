@@ -8,6 +8,7 @@ export default {
         pink: "#DF7272",
         granite: "#665570",
         beige: "#F6F5D8",
+        gray: "#4A4A4A",
       },
     },
   },

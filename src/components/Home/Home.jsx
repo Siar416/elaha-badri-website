@@ -1,10 +1,11 @@
 import Hero from "../Hero/Hero";
+import Main from "../Main/Main";
 
 const Home = () => {
   return (
     <main>
-      {/* hero section */}
       <Hero />
+      <Main />
     </main>
   );
 };
