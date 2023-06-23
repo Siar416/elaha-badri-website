@@ -5,9 +5,24 @@ import Contact from "./components/Contact/Contact";
 import Resources from "./components/Resources/Resources";
 import Navbar from "./components/Navbar/Navbar";
 
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+
 function App() {
   return (
     <section>
+      <ToastContainer
+        position="top-right"
+        autoClose={5000}
+        hideProgressBar={false}
+        newestOnTop={false}
+        closeOnClick
+        rtl={false}
+        pauseOnFocusLoss
+        draggable
+        pauseOnHover
+        theme="light"
+      />
       <BrowserRouter>
         <Navbar />
         <Routes>

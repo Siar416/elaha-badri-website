@@ -1,5 +1,6 @@
 import { useState } from "react";
 import emailjs from "@emailjs/browser";
+import { toast } from "react-toastify";
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -9,6 +10,9 @@ const Contact = () => {
   });
 
   const [isFormSubmitted, setIsFormSubmitted] = useState(false);
+
+  const notify = (message) => toast(`📧 ${message}`);
+  const notifyError = (message) => toast.error(`${message}`);
 
   const emailContent = {
     user_name: formData.user_name,
@@ -42,6 +46,7 @@ const Contact = () => {
           console.log(error.text);
         }
       );
+    notify("Thank you for your email!");
   };
 
   const handleChange = (e) => {
@@ -54,7 +59,7 @@ const Contact = () => {
 
   const validateForm = () => {
     if (!formData.user_name || !formData.user_email || !formData.message) {
-      alert("Please fill in all the fields");
+      notifyError("Please fill out all form fields");
       return false;
     }
 
