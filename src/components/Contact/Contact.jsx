@@ -1,6 +1,7 @@
 import { useState } from "react";
 import emailjs from "@emailjs/browser";
 import { toast } from "react-toastify";
+import { useNavigate } from "react-router-dom";
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -8,6 +9,8 @@ const Contact = () => {
     user_email: "",
     message: "",
   });
+
+  const navigate = useNavigate();
 
   const [isFormSubmitted, setIsFormSubmitted] = useState(false);
 
@@ -47,6 +50,9 @@ const Contact = () => {
         }
       );
     notify("Thank you for your email!");
+    setTimeout(() => {
+      navigate("/");
+    }, 3000);
   };
 
   const handleChange = (e) => {
