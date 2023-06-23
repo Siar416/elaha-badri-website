@@ -1,16 +1,47 @@
 import { useState } from "react";
+import emailjs from "@emailjs/browser";
 
 const Contact = () => {
   const [formData, setFormData] = useState({
-    firstName: "",
-    lastName: "",
-    email: "",
-    phoneNumber: "",
-    emailBody: "",
+    user_name: "",
+    user_email: "",
+    message: "",
   });
+
+  const [isFormSubmitted, setIsFormSubmitted] = useState(false);
+
+  const emailContent = {
+    user_name: formData.user_name,
+    user_email: formData.user_email,
+    message: formData.message,
+  };
 
   const handleSubmit = (e) => {
     e.preventDefault();
+
+    if (!validateForm()) return;
+
+    emailjs
+      .send(
+        "service_9xn152b",
+        "contact_form",
+        emailContent,
+        "L5jeXXDUyCGrnk-BD"
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+          setIsFormSubmitted(true);
+          setFormData({
+            user_name: "",
+            user_email: "",
+            message: "",
+          });
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
   };
 
   const handleChange = (e) => {
@@ -21,6 +52,15 @@ const Contact = () => {
     });
   };
 
+  const validateForm = () => {
+    if (!formData.user_name || !formData.user_email || !formData.message) {
+      alert("Please fill in all the fields");
+      return false;
+    }
+
+    return true;
+  };
+
   return (
     <section className="m-5">
       <span className="text-xl">Get In Touch</span>
@@ -29,17 +69,9 @@ const Contact = () => {
           <input
             className="p-3 bg-beige rounded-md mb-2 shadow-md shadow-slate-600"
             type="text"
-            placeholder="First Name"
-            name="firstName"
-            value={formData.firstName}
-            onChange={handleChange}
-          />
-          <input
-            className="p-3 bg-beige rounded-md mb-2 shadow-md shadow-slate-600"
-            type="text"
-            placeholder="Last Name"
-            name="lastName"
-            value={formData.lastName}
+            placeholder="Name"
+            name="user_name"
+            value={formData.user_name}
             onChange={handleChange}
           />
         </div>
@@ -48,16 +80,8 @@ const Contact = () => {
             className="p-3 bg-beige rounded-md mb-2 shadow-md shadow-slate-600"
             type="email"
             placeholder="Email"
-            name="email"
-            value={formData.email}
-            onChange={handleChange}
-          />
-          <input
-            className="p-3 bg-beige rounded-md mb-2 shadow-md shadow-slate-600"
-            type="number"
-            placeholder="Phone Number"
-            name="phoneNumber"
-            value={formData.phoneNumber}
+            name="user_email"
+            value={formData.user_email}
             onChange={handleChange}
           />
         </div>
@@ -65,8 +89,8 @@ const Contact = () => {
           <textarea
             className="w-full h-52 p-3 bg-beige rounded-md mb-2 shadow-md shadow-slate-600"
             placeholder="Type your message here"
-            name="emailBody"
-            value={formData.emailBody}
+            name="message"
+            value={formData.message}
             onChange={handleChange}
           ></textarea>
         </div>
