@@ -4,10 +4,13 @@ import { Link } from "react-router-dom";
 const Hero = () => {
   return (
     <article
-      className="flex items-center bg-no-repeat bg-cover bg-center md:bg-contain md:h-100"
-      style={{ backgroundImage: `url(${moneyTree})`, height: "25rem" }}
+      className="flex items-center bg-no-repeat bg-cover bg-center md:flex-col-reverse md:mt-8 md:rounded-2xl md:mx-10 md:shadow-2xl"
+      style={{
+        backgroundImage: `url(${moneyTree})`,
+        height: "25rem",
+      }}
     >
-      <div className="flex flex-col items-center p-5 text-white text-lg">
+      <div className="flex flex-col items-center p-5 text-white text-lg md:bg-stone-900/70 md:rounded-2xl md:mb-2">
         <span>
           Watch You Money{" "}
           <span className="text-green ml-1 font-bold">Grow!</span>
