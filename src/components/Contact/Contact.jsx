@@ -2,6 +2,7 @@ import { useState } from "react";
 import emailjs from "@emailjs/browser";
 import { toast } from "react-toastify";
 import { useNavigate } from "react-router-dom";
+import contactUs from "../../assets/images/contact-us.jpg";
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -73,8 +74,16 @@ const Contact = () => {
   };
 
   return (
-    <section className="m-5">
-      <span className="text-xl">Get In Touch</span>
+    <section className="m-5 min-h-screen ">
+      <div
+        style={{
+          backgroundImage: `url(${contactUs})`,
+        }}
+        className="bg-cover bg-no-repeat bg-center h-56 rounded-2xl flex justify-center items-center text-white shadow-md shadow-slate-600 md:h-96 "
+      >
+        <span className="text-xl md:text-3xl">Get In Touch</span>
+      </div>
+
       <form onSubmit={handleSubmit}>
         <div className="flex flex-col mt-5">
           <input
