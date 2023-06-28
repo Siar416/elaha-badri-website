@@ -6,16 +6,16 @@ import { Link } from "react-router-dom";
 
 const GetInsurance = () => {
   return (
-    <section className="md:text-lg">
+    <section className="md:text-lg xl:flex xl:flex-col">
       <article
         style={{
           backgroundImage: `url(${moneyHouse})`,
           height: "18rem",
         }}
-        className="bg-contain bg-no-repeat bg-center md:bg-repeat"
+        className="bg-contain bg-no-repeat bg-center md:bg-repeat xl:rounded-lg xl:flex-wrap"
       />
-      <section className=" flex flex-col items-center">
-        <div className="flex flex-col text-center bg-red p-8 m-2 shadow-2xl">
+      <section className="flex flex-col items-center xl:flex-row xl:items-stretch">
+        <div className="flex flex-col text-center bg-red p-8 m-2 shadow-2xl xl:rounded-lg xl:w-1/3">
           <div>
             <FaUmbrella className="h-10 w-80 mb-3 m-auto" />
           </div>
@@ -30,7 +30,7 @@ const GetInsurance = () => {
           </span>
         </div>
 
-        <div className="flex flex-col text-center bg-green p-8 m-2 shadow-2xl">
+        <div className="flex flex-col text-center bg-green p-8 m-2 shadow-2xl xl:rounded-lg xl:w-1/3 ">
           <div>
             <FaPiggyBank className="h-10 w-80 mb-3 m-auto" />
           </div>
@@ -43,7 +43,7 @@ const GetInsurance = () => {
           </span>
         </div>
 
-        <div className="flex flex-col text-center bg-red p-8 m-2 shadow-2xl">
+        <div className="flex flex-col text-center bg-red p-8 m-2 shadow-2xl xl:rounded-lg xl:w-1/3 ">
           <div>
             <FaUserGraduate className="h-10 w-80 mb-3 m-auto" />
           </div>
@@ -54,10 +54,10 @@ const GetInsurance = () => {
             have the opportunity to pursue their educational goals.
           </span>
         </div>
-        <button className="m-5 bg-beige px-6 py-1 mt-2 text-peach rounded font-medium hover:bg-green hover:text-white">
-          <Link to="/contact">Get in Touch</Link>
-        </button>
       </section>
+      <button className="m-5 bg-green px-6 py-1 mt-2 text-white rounded font-medium hover:bg-black/[.5]  block mx-auto">
+        <Link to="/contact">Get in Touch</Link>
+      </button>
     </section>
   );
 };

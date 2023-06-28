@@ -10,7 +10,7 @@ import "react-toastify/dist/ReactToastify.css";
 
 function App() {
   return (
-    <section>
+    <section className="xl:bg-lightGray">
       <ToastContainer
         position="top-right"
         autoClose={3000}

@@ -11,6 +11,7 @@ export default {
         granite: "#665570",
         beige: "#F6F5D8",
         gray: "#4A4A4A",
+        lightGray: "#d3d3d3",
       },
     },
   },

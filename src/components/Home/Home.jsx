@@ -3,7 +3,7 @@ import Main from "../Main/Main";
 
 const Home = () => {
   return (
-    <main>
+    <main className="xl:mx-10">
       <Hero />
       <Main />
     </main>

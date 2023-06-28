@@ -74,20 +74,21 @@ const Contact = () => {
   };
 
   return (
-    <section className="m-5 min-h-screen ">
+    <section className="m-5 min-h-screen xl:flex xl:justify-between items-center">
       <div
         style={{
           backgroundImage: `url(${contactUs})`,
         }}
-        className="bg-cover bg-no-repeat bg-center h-56 rounded-2xl flex justify-center items-center text-white shadow-md shadow-slate-600 md:h-96"
+        className="bg-cover bg-no-repeat bg-center h-56 rounded-2xl flex justify-center items-center text-white shadow-md shadow-slate-600 md:h-96 xl:h-[50vh] xl:w-[45vw]"
       >
-        <span className="text-xl md:text-3xl">Get In Touch</span>
+        <span className="text-xl md:text-3xl xl:hidden">Get In Touch</span>
       </div>
 
       <form onSubmit={handleSubmit}>
+        <span className="hidden xl:block xl:text-3xl ">Get in Touch</span>
         <div className="flex flex-col mt-5">
           <input
-            className="p-3 bg-beige rounded-md mb-2 shadow-md shadow-slate-600"
+            className="p-3 bg-beige rounded-md mb-2 shadow-md shadow-slate-600 xl:w-[50vw]"
             type="text"
             placeholder="Name"
             name="user_name"
@@ -97,7 +98,7 @@ const Contact = () => {
         </div>
         <div className="flex flex-col">
           <input
-            className="p-3 bg-beige rounded-md mb-2 shadow-md shadow-slate-600"
+            className="p-3 bg-beige rounded-md mb-2 shadow-md shadow-slate-600 xl:w-[50vw]"
             type="email"
             placeholder="Email"
             name="user_email"
@@ -107,7 +108,7 @@ const Contact = () => {
         </div>
         <div>
           <textarea
-            className="w-full h-52 p-3 bg-beige rounded-md mb-2 shadow-md shadow-slate-600"
+            className="w-full h-52 p-3 bg-beige rounded-md mb-2 shadow-md shadow-slate-600 xl:w-[50vw]"
             placeholder="Type your message here"
             name="message"
             value={formData.message}
