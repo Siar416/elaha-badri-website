@@ -79,7 +79,7 @@ const Contact = () => {
         style={{
           backgroundImage: `url(${contactUs})`,
         }}
-        className="bg-cover bg-no-repeat bg-center h-56 rounded-2xl flex justify-center items-center text-white shadow-md shadow-slate-600 md:h-96 "
+        className="bg-cover bg-no-repeat bg-center h-56 rounded-2xl flex justify-center items-center text-white shadow-md shadow-slate-600 md:h-96"
       >
         <span className="text-xl md:text-3xl">Get In Touch</span>
       </div>

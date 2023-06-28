@@ -15,7 +15,7 @@ const GetInsurance = () => {
         className="bg-contain bg-no-repeat bg-center md:bg-repeat"
       />
       <section className=" flex flex-col items-center">
-        <div className="flex flex-col text-center bg-pink p-8 m-2 shadow-2xl">
+        <div className="flex flex-col text-center bg-red p-8 m-2 shadow-2xl">
           <div>
             <FaUmbrella className="h-10 w-80 mb-3 m-auto" />
           </div>
@@ -43,7 +43,7 @@ const GetInsurance = () => {
           </span>
         </div>
 
-        <div className="flex flex-col text-center bg-pink p-8 m-2 shadow-2xl">
+        <div className="flex flex-col text-center bg-red p-8 m-2 shadow-2xl">
           <div>
             <FaUserGraduate className="h-10 w-80 mb-3 m-auto" />
           </div>
@@ -54,7 +54,7 @@ const GetInsurance = () => {
             have the opportunity to pursue their educational goals.
           </span>
         </div>
-        <button className="m-5 bg-beige px-6 py-1 mt-2 text-pink rounded font-medium hover:bg-green hover:text-white">
+        <button className="m-5 bg-beige px-6 py-1 mt-2 text-peach rounded font-medium hover:bg-green hover:text-white">
           <Link to="/contact">Get in Touch</Link>
         </button>
       </section>

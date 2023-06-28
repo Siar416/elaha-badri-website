@@ -4,7 +4,7 @@ const Main = () => {
   return (
     <main className="flex flex-col text-gray md:mx-10">
       <h1 className="text-2xl align-center p-5 md:text-center md:mt-8 md:text-3xl">
-        <span className="text-pink">Progressing</span> Towards{" "}
+        <span className="text-peach">Progressing</span> Towards{" "}
         <span className="text-green">Financial </span>
         Stability
       </h1>

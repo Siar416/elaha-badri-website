@@ -15,7 +15,7 @@ const Hero = () => {
           Watch You Money{" "}
           <span className="text-green ml-1 font-bold">Grow!</span>
         </span>
-        <button className="bg-beige px-6 py-1 mt-2 text-pink rounded font-medium hover:bg-black/[.5]">
+        <button className="bg-beige px-6 py-1 mt-2 text-peach rounded font-medium hover:bg-black/[.5]">
           <Link to="/contact">Get in touch today</Link>
         </button>
       </div>
