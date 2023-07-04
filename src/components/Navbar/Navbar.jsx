@@ -22,18 +22,21 @@ const Navbar = () => {
               <Link
                 to="/about"
                 className="text-gray-300 transition-all duration-500 hover:bg-beige hover:text-red px-3 py-2 rounded-md text-md font-medium"
+                data-testid="mobile-menu-link"
               >
                 About
               </Link>
               <Link
                 to="/contact"
                 className="text-gray-300 transition-all duration-500 hover:bg-beige hover:text-red px-3 py-2 rounded-md text-md font-medium"
+                data-testid="mobile-menu-link"
               >
                 Contact
               </Link>
               <Link
                 to="/resources"
                 className="text-gray-300 transition-all duration-500 hover:bg-beige hover:text-red px-3 py-2 rounded-md text-md font-medium"
+                data-testid="mobile-menu-link"
               >
                 Resources
               </Link>
