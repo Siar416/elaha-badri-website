@@ -1,7 +1,7 @@
 import { fireEvent, render, screen } from "@testing-library/react";
 import { describe, test, expect } from "vitest";
 import { BrowserRouter } from "react-router-dom";
-import Navbar from "./components/Navbar/Navbar";
+import Navbar from "../components/Navbar/Navbar";
 
 describe("Navbar Component", () => {
   test("renders the logo link", () => {

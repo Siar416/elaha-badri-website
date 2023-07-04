@@ -8,6 +8,7 @@ const About = () => {
       style={{
         backgroundImage: `url(${money})`,
       }}
+      aria-label="background"
       className="flex flex-col md:flex-row md:h-screen bg-cover bg-no-repeat xl:flex-col"
     >
       <article className="min-w-fit p-5 mx-auto md:my-auto">
