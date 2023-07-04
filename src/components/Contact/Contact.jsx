@@ -79,12 +79,13 @@ const Contact = () => {
         style={{
           backgroundImage: `url(${contactUs})`,
         }}
+        aria-label="background"
         className="bg-cover bg-no-repeat bg-center h-56 rounded-2xl flex justify-center items-center text-white shadow-md shadow-slate-600 md:h-96 xl:h-[50vh] xl:w-[45vw]"
       >
         <span className="text-xl md:text-3xl xl:hidden">Get In Touch</span>
       </div>
 
-      <form onSubmit={handleSubmit}>
+      <form onSubmit={handleSubmit} data-testid="form">
         <span className="hidden xl:block xl:text-3xl ">Get in Touch</span>
         <div className="flex flex-col mt-5">
           <input

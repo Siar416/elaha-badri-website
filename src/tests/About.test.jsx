@@ -3,7 +3,6 @@ import { describe, test, expect, navigate } from "vitest";
 import About from "../components/About/About";
 import { BrowserRouter } from "react-router-dom";
 import client from "../assets/images/elaha-favicon.jpg";
-import money from "../assets/images/money.jpg";
 
 describe("About Component", () => {
   test("client image being rendered", () => {
