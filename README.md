@@ -9,6 +9,14 @@ The project is a website built for a Financial Advisor client. It serves as an o
 - Contact Page: Allows visitors to get in touch with the Financial Advisor for inquiries or to schedule appointments.
 - Resources Page: Coming soon!
 
+## Tech Stack
+
+- React, TailwindCSS, React Router Dom, React Toastify
+
+## Testing
+
+The project incorporates extensive component testing, conducted using the Vitest framework, to validate the reliability and functionality of the codebase. These tests specifically focus on individual components, including the About component, to ensure their proper rendering, interactivity, and adherence to expected behaviors.
+
 ## Screenshots
 
 ![App Screenshot](src/assets/images/financial-screen-shot.JPG)
