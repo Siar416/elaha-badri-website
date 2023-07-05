@@ -1,5 +1,5 @@
 import { render, screen, fireEvent } from "@testing-library/react";
-import { describe, test, expect, navigate } from "vitest";
+import { describe, test, expect } from "vitest";
 import About from "../components/About/About";
 import { BrowserRouter } from "react-router-dom";
 import client from "../assets/images/elaha-favicon.jpg";

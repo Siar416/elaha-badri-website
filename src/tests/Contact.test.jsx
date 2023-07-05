@@ -1,5 +1,5 @@
 import { render, screen } from "@testing-library/react";
-import { describe, test, expect, vitest } from "vitest";
+import { describe, test, expect } from "vitest";
 import Contact from "../components/Contact/Contact";
 import { BrowserRouter } from "react-router-dom";
 
