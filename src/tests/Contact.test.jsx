@@ -1,8 +1,7 @@
-import { fireEvent, render, screen, waitFor } from "@testing-library/react";
+import { render, screen } from "@testing-library/react";
 import { describe, test, expect, vitest } from "vitest";
 import Contact from "../components/Contact/Contact";
 import { BrowserRouter } from "react-router-dom";
-import { toast } from "react-toastify";
 
 describe("Contact Component", () => {
   test("check to see if Contact component renders", () => {
